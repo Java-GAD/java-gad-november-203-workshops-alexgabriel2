@@ -15,7 +15,7 @@ public class Main {
     }
     public static void rightTriangle(int nrRows,int nrCols) {
         // Press Ctrl+Alt+L to reformat the code.
-        for (int i = 1; i < nrRows; i++) {
+        for (int i = 1; i <= nrRows; i++) {
             for (int j = 1; j <= nrCols; j++)
                 if(i>=j)
                     System.out.print("* ");
@@ -28,7 +28,9 @@ public class Main {
     public static void main(String[] args) {
         // Press Alt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
-        rightTriangle(5,4);
+        printPattern(5,5);
+        System.out.println();
+        rightTriangle(5,5);
         // Press Shift+F10 or click the green arrow button in the gutter to run the code.
 
     }
