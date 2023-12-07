@@ -13,16 +13,23 @@ public class Main {
 
         }
     }
+    public static void rightTriangle(int nrRows,int nrCols) {
+        // Press Ctrl+Alt+L to reformat the code.
+        for (int i = 1; i < nrRows; i++) {
+            for (int j = 1; j <= nrCols; j++)
+                if(i>=j)
+                    System.out.print("* ");
+                else
+                    System.out.print("  ");
+            System.out.println();
+
+        }
+    }
     public static void main(String[] args) {
         // Press Alt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
-        printPattern(5,5);
+        rightTriangle(5,4);
         // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
     }
 }
